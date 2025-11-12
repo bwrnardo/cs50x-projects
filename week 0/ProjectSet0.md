@@ -1,8 +1,8 @@
-# Problem set 0 #
+# Problem set 0 
 
-## What is my scratch project about ##
+## What is my scratch project about 
 
-## English ##
+### English 
 For my first Scratch program I tried to make a labyrinth, it works as simples as it is, your character is a bat and he is trying to make it to the end without touching the walls.
 To get to the end, you have to get a key first, if you try to get to the end before getting the key, the bat will tell you to go back and get it.
 
@@ -11,7 +11,7 @@ The win function works the same way the lose function does, but when you touch t
 
 I took about 2 hours plotting and constructing the program and had a lot of fun with it, I think it's good for a first Scratch project :)
 
-## Português ##
+### Português 
 Para o meu primeiro projeto em Scratch tentei fazer um labirinto, funciona da forma mais simples possível. Seu personagem é um morcego e ele está tentando chegar ao final sem encostar nas paredes.
 Para chegar ao final, você precisa primeiro pegar uma chave, se tentar chegar ao final antes de pegar a chave, o morcego dirá para você voltar e pegá‑la.
 

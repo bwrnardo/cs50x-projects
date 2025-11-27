@@ -1,0 +1,23 @@
+time sort1 random50000 -> real 5,935s
+time sort2 random50000 -> real 0,789s
+time sort3 random50000 -> real 2,587s
+
+time sort1 reversed50000 -> real 5,253s
+time sort2 reversed50000 -> real 0,764s
+time sort3 reversed50000 -> real 2,906s	
+
+time sort1 sorted50000 -> real 0,741s
+time sort2 sorted50000 -> real 0,785s
+time sort3 sorted50000 -> real 2,702s
+
+sort1 uses: Bubble Sort
+
+How do you know?: It is the one that takes the most average time to sort big files.
+
+sort2 uses: Merge Sort
+
+How do you know?:It takes less time than the other sort types (Average Case), but when a file is already sorted it takes longer than simple adaptive sorts.
+
+sort3 uses: Selection Sort
+
+How do you know?: It does the same amount of work every time, even if it is already sorted.

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function () {
+
+                // MULTIPLE CHOICE
+                let correct = document.querySelector('.correct');
+                let incorrects = document.querySelectorAll('.incorrect');
+                let feedback1 = document.querySelector('.section .feedback');
+
+                correct.addEventListener('click', function () {
+                    correct.style.backgroundColor = 'green';
+                    feedback1.innerHTML = 'Correct!';
+                });
+
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function () {
+                        incorrects[i].style.backgroundColor = 'red';
+                        feedback1.innerHTML = 'Incorrect';
+                    });
+                }
+                // FREE RESPONSE
+                document.querySelector('#check').addEventListener('click', function () {
+                    let input = document.querySelector('input');
+                    let feedback2 = document.querySelectorAll('.feedback')[1];
+
+                    if (input.value.trim().toLowerCase() === "i'm still here") {
+                        input.style.backgroundColor = 'green';
+                        feedback2.innerHTML = 'Correct!';
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        feedback2.innerHTML = 'Incorrect';
+                    }
+                });
+
+            });
+
+         </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                 <h3>
+                    Which film won the Oscar for Best Picture in 2025?
+                 </h3>
+                 <button class="incorrect">A Complete Unkown</button> <button class="incorrect">The Brutalist</button>
+                 <button class="incorrect">Dune: Part Two</button> <button class="correct">Anora</button> <button class="incorrect">Conclave</button>
+                 <button class="incorrect">Emilia Pérez</button> <button class="incorrect">Nickel Boys</button>
+                 <button class="incorrect">The Substance</button> <button class="incorrect">Wicked</button> <button class="incorrect">I'm Still Here</button>
+                 <p class="feedback"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Which film won Best International Feature Film in 2025?</h3>
+                <input autocomplete="off" type="text" style="width: 250px;"> <button id="check">Check Answer</button>
+                <p class="feedback"></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+I used bootstrap cards for layout and responsiveness, buttons and images clickable
+Javascript to show and hide the synopsis
+For the CSS styles I tried copying the letterboxd page style
+And html for formatting
